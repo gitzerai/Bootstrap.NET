@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56AE534E-1847-4890-BF00-631C3429360A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrap.NET</RootNamespace>
+    <AssemblyName>Bootstrap.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\Controls\Button.cs" />
+    <Compile Include="Source\Controls\ButtonGroup.cs" />
+    <Compile Include="Source\Controls\ButtonToolbar.cs" />
+    <Compile Include="Source\Controls\ContentContainer.cs" />
+    <Compile Include="Source\Controls\DropdownButton.cs" />
+    <Compile Include="Source\Controls\DropdownMenu.cs" />
+    <Compile Include="Source\Controls\Input.cs" />
+    <Compile Include="Source\Controls\Login.cs" />
+    <Compile Include="Source\Controls\MenuItem.cs" />
+    <Compile Include="Source\Controls\Navbar.cs" />
+    <Compile Include="Source\Controls\Panel.cs" />
+    <Compile Include="Source\Controls\Table.cs" />
+    <Compile Include="Source\Enums.cs" />
+    <Compile Include="Source\Controls\Icon.cs" />
+    <Compile Include="Source\RenderAttribute.cs" />
+    <Compile Include="Source\Events\LoginEventArgs.cs" />
+    <Compile Include="Source\Helpers\Extensions.cs" />
+    <Compile Include="Source\HTML\HtmlAttribute.cs" />
+    <Compile Include="Source\HTML\HtmlElement.cs" />
+    <Compile Include="Source\HTML\HtmlRenderer.cs" />
+    <Compile Include="Source\Controls\Modal.cs" />
+    <Compile Include="Source\Interfaces\IMenuItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Templates\LoginTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

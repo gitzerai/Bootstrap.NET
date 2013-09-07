@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap.NET", "Bootstrap.NET\Bootstrap.NET.csproj", "{56AE534E-1847-4890-BF00-631C3429360A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mscz.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Bootstrap.NET\\Bootstrap.NET.csproj
+		SccProjectName1 = Bootstrap.NET
+		SccLocalPath1 = Bootstrap.NET
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56AE534E-1847-4890-BF00-631C3429360A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AE534E-1847-4890-BF00-631C3429360A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AE534E-1847-4890-BF00-631C3429360A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AE534E-1847-4890-BF00-631C3429360A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
