@@ -11,6 +11,8 @@ namespace Bootstrap.NET.Controls
     [ToolboxData("<{0}:Table runat=server></{0}:Table>")]
     public class Table : GridView
     {
+        //TODO: IsStriped, IsResponsive, IsHover
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -18,6 +20,8 @@ namespace Bootstrap.NET.Controls
             this.UseAccessibleHeader = true;            
             if (this.HeaderRow == null)
                 return;
+
+            this.CssClass = "table " + this.CssClass;
 
             this.HeaderRow.TableSection = TableRowSection.TableHeader;
             this.PagerStyle.CssClass = "pagination";            

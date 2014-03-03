@@ -53,6 +53,7 @@
     <Compile Include="Source\Controls\ContentContainer.cs" />
     <Compile Include="Source\Controls\DropdownButton.cs" />
     <Compile Include="Source\Controls\DropdownMenu.cs" />
+    <Compile Include="Source\Controls\GridView.cs" />
     <Compile Include="Source\Controls\Input.cs" />
     <Compile Include="Source\Controls\Login.cs" />
     <Compile Include="Source\Controls\MenuItem.cs" />
