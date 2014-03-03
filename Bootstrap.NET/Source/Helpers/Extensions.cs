@@ -63,5 +63,19 @@ namespace Bootstrap.NET.Helpers
         {
             return !str.IsEmpty();
         }
+
+        public static void AddClass(this WebControl control, string cssClass) {
+            if (string.IsNullOrWhiteSpace(control.CssClass)) {
+                control.CssClass = cssClass;
+            } else {
+                control.CssClass = string.Format("{0} {1}", cssClass, control.CssClass);
+            }
+        }
+
+        public static void EnsureClass(this WebControl control, string cssClass) {
+            if (!control.CssClass.Contains(cssClass)) {
+                control.AddClass(cssClass);
+            }
+        }
     }
 }

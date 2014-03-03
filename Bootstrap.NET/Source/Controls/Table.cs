@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Bootstrap.NET.Helpers;
 
 namespace Bootstrap.NET.Controls
 {
@@ -21,7 +18,7 @@ namespace Bootstrap.NET.Controls
             if (this.HeaderRow == null)
                 return;
 
-            this.CssClass = "table " + this.CssClass;
+            this.EnsureClass("table");
 
             this.HeaderRow.TableSection = TableRowSection.TableHeader;
             this.PagerStyle.CssClass = "pagination";            
