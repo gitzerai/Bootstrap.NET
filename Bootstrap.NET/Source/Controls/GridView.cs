@@ -1,8 +1,28 @@
 ﻿using System;
 using System.Web.UI.HtmlControls;
+using Bootstrap.NET.Helpers;
+using System.Web.UI.WebControls;
 
 namespace Bootstrap.NET.Source.Controls {
     public class GridView : System.Web.UI.WebControls.GridView {
+
+        //TODO: IsStriped, IsResponsive, IsHover
+
+        protected override void OnLoad(EventArgs e) {
+            base.OnLoad(e);
+
+            this.UseAccessibleHeader = true;
+            if (this.HeaderRow == null)
+                return;
+
+            this.GridLines = System.Web.UI.WebControls.GridLines.None;
+
+            this.EnsureClass("table");
+
+            this.HeaderRow.TableSection = TableRowSection.TableHeader;
+            this.PagerStyle.CssClass = "pagination";
+        }
+
         protected override void InitializePager(System.Web.UI.WebControls.GridViewRow row, int columnSpan, System.Web.UI.WebControls.PagedDataSource pagedDataSource) {
             HtmlGenericControl ul = new HtmlGenericControl("ul");
 

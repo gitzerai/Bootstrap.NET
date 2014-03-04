@@ -13,10 +13,12 @@ namespace Bootstrap.NET.Controls
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
+            
             this.UseAccessibleHeader = true;            
             if (this.HeaderRow == null)
                 return;
+
+            this.GridLines = System.Web.UI.WebControls.GridLines.None;
 
             this.EnsureClass("table");
 
